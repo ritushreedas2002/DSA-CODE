@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-// Definition for a binary tree node.
+
 class TreeNode {
 public:
     int val;
@@ -27,7 +27,7 @@ public:
         if(findPath(root->left,path,target) || findPath(root->right,path,target)){
             return true;
         }
-        
+
         path.pop_back();
 
         return false;
